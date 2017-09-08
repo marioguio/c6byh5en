@@ -32,6 +32,7 @@ class Api::V1::ProductsController < ApplicationController
   end
   def destroy
 		product = Product.find(params[:id])
+    product.destroy
  			render status:204
   end
 
